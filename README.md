@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# ✈️ Flight Booking React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a flight booking application built with React and React Router. It includes user authentication, flight search, booking, payment, and an admin dashboard.
 
-## Available Scripts
+> 🔗 Live Project: *(Add your live Netlify/Vercel link here after deployment)*  
+> 📁 GitHub Repository: [Shreyasssonar/flightbookingapp](https://github.com/Shreyasssonar/flightbookingapp)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📄 Pages & Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Login Page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The entry point for users to log in.
 
-### `npm test`
+![Login Page](./login.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 2. Signup Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Allows new users to register.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Signup Page](./signup.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 3. Search Flights Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Users can search available flights by entering source, destination, and dates.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Search Flights Page](./search1.png)  
+![Search Flights Page](./search2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. Booking Page
 
-## Learn More
+Users can select and confirm their flight bookings here.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Booking Page](./booking.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 5. Payment Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Handles payment for flight bookings with multiple payment options.
 
-### Analyzing the Bundle Size
+![Payment Page](./Payment.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+### 6. Admin Dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Dashboard for admin users to manage flights, bookings, and users.
 
-### Advanced Configuration
+![Admin Dashboard](./admin.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🛠️ How to Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Install dependencies:
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
