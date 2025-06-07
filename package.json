@@ -1,6 +1,7 @@
 {
   "name": "flightbookingapp",
   "version": "0.1.0",
+  "homepage": "https://shreyasssonar.github.io/flightbookingapp",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

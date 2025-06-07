@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 
 const paymentOptions = [
@@ -25,7 +23,6 @@ const Payment = () => {
   const [isProcessing, setIsProcessing] = useState(false)
   const [paymentStatus, setPaymentStatus] = useState("")
 
-  // Card validation functions
   const validateCardNumber = (number) => {
     const digits = number.replace(/\D/g, "")
     let sum = 0
@@ -140,7 +137,7 @@ const Payment = () => {
     setPaymentStatus("")
 
     setTimeout(() => {
-      const success = Math.random() > 0.3 // 70% success rate
+      const success = Math.random() > 0.3 
       if (success) {
         setPaymentStatus("success")
         const transactionId = "TXN" + Math.random().toString(36).substr(2, 9).toUpperCase()
@@ -163,9 +160,7 @@ const Payment = () => {
     document.body.removeChild(link)
   }
 
-  const amount = 1299.0 // Example amount
-
-  // If payment is successful, show only success message and download button
+  const amount = 1299.0 
   if (paymentStatus === "success") {
     return (
       <div style={{
@@ -200,7 +195,7 @@ const Payment = () => {
           <h2 style={{
             color: '#28a745',
             margin: '0 0 30px 0',
-            fontSize: '24px', 1``
+            fontSize: '24px', 
             fontWeight: '600'
           }}>
             Payment Successful!
