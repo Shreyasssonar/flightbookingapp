@@ -1,0 +1,68 @@
+:root {
+    --color-primary: #007BFF;
+    --color-secondary: #00BFFF;
+    --color-accent: #FFA500;
+    --color-bg: #F4F6F9;
+    --color-card-bg: #FFFFFF;
+    --color-text-primary: #333333;
+    --color-text-secondary: #666666;
+    --color-success: #28a745;
+    --color-error: #dc3545;
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    color: var(--color-text-primary);
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-box {
+    background-color: var(--color-card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  }
+  
+  .signup-box h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-primary);
+  }
+  
+  .signup-box input,
+  .signup-box select {
+    width: 100%;
+    height: 42px;
+    padding: 0 10px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .signup-box button {
+    width: 100%;
+    height: 45px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-box button:hover {
+    background-color: var(--color-secondary);
+  }
+  

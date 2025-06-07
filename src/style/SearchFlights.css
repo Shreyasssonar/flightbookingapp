@@ -1,0 +1,108 @@
+:root {
+    --color-primary: #007BFF;
+    --color-secondary: #00BFFF;
+    --color-accent: #FFA500;
+    --color-bg: #F4F6F9;
+    --color-card-bg: #FFFFFF;
+    --color-text-primary: #333333;
+    --color-text-secondary: #666666;
+    --color-success: #28a745;
+    --color-error: #dc3545;
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    color: var(--color-text-primary);
+  }
+  
+  .search-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--color-card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .search-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-text-primary);
+  }
+  
+  .search-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .search-inputs input[type="text"],
+  .search-inputs input[type="date"],
+  .search-inputs input[type="number"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-width: 140px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .search-inputs input[type="number"][placeholder="Passengers"] {
+    max-width: 90px;
+  }
+  
+  .search-inputs button {
+    padding: 10px 16px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    min-width: 100px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-inputs button:hover {
+    background-color: var(--color-secondary);
+  }
+  
+  .flight-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .no-flights-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .no-flights-message img {
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  @media (max-width: 768px) {
+    .search-inputs {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .search-inputs input,
+    .search-inputs button {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
